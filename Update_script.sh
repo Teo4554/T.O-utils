@@ -2,7 +2,7 @@
 #experimental script, do not use in servers
 #fast and semi-automatic updating script by Teo:D
 #I advice you to set this script as an starup binary/program, it will make using this script a lot more comfortable to use
-read "Greetings, what do u wanna do;)?: " [op] #option
+read -p "Greetings, what do u wanna do;)?: " [op] #option
 if [ $op = fupdate ]; then #fupdate= full update, apt update updates the repository, and apt upgrade downloads and installs the update-avalaible packpages and dependecies, if there is a reason why apt update fails, upgrade will not run neither
     sudo apt update && sudo apt upgrade -y
     echo "Update finished, exiting process..."
